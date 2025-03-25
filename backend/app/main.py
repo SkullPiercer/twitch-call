@@ -1,6 +1,7 @@
+from app.core.config import settings
 from fastapi import FastAPI
 
-app = FastAPI()
+app = FastAPI(title=settings.app_title)
 
 
 @app.get("/")
